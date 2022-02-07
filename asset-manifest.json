@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TodoList_Material_UI/static/css/main.f3feadf7.css",
+    "main.js": "/TodoList_Material_UI/static/js/main.a3e7b0dc.js",
+    "index.html": "/TodoList_Material_UI/index.html",
+    "main.f3feadf7.css.map": "/TodoList_Material_UI/static/css/main.f3feadf7.css.map",
+    "main.a3e7b0dc.js.map": "/TodoList_Material_UI/static/js/main.a3e7b0dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3feadf7.css",
+    "static/js/main.a3e7b0dc.js"
+  ]
+}

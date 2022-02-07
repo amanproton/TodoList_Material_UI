@@ -1,0 +1,88 @@
+*{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#container{
+    position: relative;
+    background-color: #4044c9;
+    width: 400px;
+    border: 2px solid red;
+    background-color: #4044c9;
+}
+
+#topContainer{
+    border: 2px solid green;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#addButton{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.4rem;
+    color: #4044c9;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+
+#bottomContainer{
+    padding: 1rem;
+    border: 2px solid red;
+    border-top-left-radius: 1.5rem;
+    height: max-content;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    row-gap: 0.4rem;
+
+}
+
+.task{
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: start;
+    column-gap: 0.5rem;
+    border: 2px solid red;
+    color: #b5b5b5;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+.task .aman{
+    position: relative;
+    cursor: pointer;
+    
+}
+.task input::before{
+    position: absolute;
+    content: '';
+    top: 60%;
+    left: 60%;
+    padding: 0.3rem;
+    border-radius: 50%;
+    background-color: #4044c9;
+    /* background-color: transparent; */
+}
+
+.task:hover input::before{
+    background-color: #fff;
+}
+
+.task:hover , 
+.task:active,
+.task:focus{
+    background-color: #4044c9;
+    color: #fff;
+}

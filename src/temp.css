@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    margin-top: 3rem;
+    position: relative;
+    background-color: #4044c9;
+    width: 400px;
+    height: 30rem;
+    background-color: #4044c9;
+    border-radius: 15px;
+    box-shadow: -10px 0px 20px 5px rgb(0 0 0 / 50%);
+    overflow-y: hidden;
+}
+#container::-webkit-scrollbar,
+#bottomContainer::-webkit-scrollbar{
+    display: none;
+}
+
+#topContainer{
+    /* border: 2px solid green; */
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#addButton{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.4rem;
+    color: #4044c9;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
+
+#bottomContainer{
+    position: relative;
+    height: 100%;
+    padding: 1rem;
+    border-top-left-radius: 1.5rem;
+    background-color: #fff;
+
+    
+    row-gap: 0.4rem;
+    overflow-y: scroll;
+}
+
+.task:last-child{
+    margin-bottom: 10rem;
+}
+.task:hover{
+    background-color: #4044c9;
+}
+.task:hover .typo{
+    color: #fff !important;
+}
+.checkColor{
+    color: "" !important;
+}
+.task:hover .checkColor{
+    color: #fff !important;
+}
+.typo{
+    color: #bababa !important;
+}
+.task{
+    width: 80%;
+    margin: 0.8rem auto;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+    background-color: #f2f2f2;
+    /* border: 2px solid red; */
+    color: #b5b5b5;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+.task .aman{
+    position: relative;
+    cursor: pointer;
+    
+}
+
+
+.customInput{
+    color: #fff !important;
+}
+.customInput input{
+    color: #fff !important;
+}
+
+
+
+@media screen and (max-width : 400px) {
+
+    #container{
+        width: 100% !important;
+    }
+    
+}
